@@ -6,6 +6,12 @@ Material-UI is a set of [React](http://facebook.github.io/react/) components tha
 
 Check out our [documentation site](http://www.material-ui.com/) for live examples. It's still a work in progress, but hopefully you can see where we're headed.
 
+## ABOUT THE FORK
+
+Material-UI components do not work well with isomorphic rendering as the CSS auto-prefixing only happens on client side. This lead to React gives warning about invalid component checksum.
+
+To support isomorphic rendering, we need to run auto-prefixing on server side too. However as a tradeoff, we have to prefix for all vendors.
+
 ## Prerequisites
 
 We recommend that you get started with the [React Library](http://facebook.github.io/react/) before diving into material-ui for a better understanding. Should you choose to skip this, don't worry, we'll explain relevant React concepts as they come along.
